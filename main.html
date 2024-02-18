@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PINOY HENYO TIMER</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Timer Display Panel -->
+    <div id="timerDisplayPanel">
+        <img src="header.png" draggable="false">
+        <div id="timerDisplay" class="center">00:00.00</div>
+        <span id="houseNameDisplay" class="center">HOUSE OF GREYJOY</span>
+    </div>
+
+    <!-- Hidden modal for entering custom time -->
+    <div id="customTimeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Enter Custom Time</h2>
+            <input type="number" id="customMinutes" placeholder="Minutes">
+            <input type="number" id="customSeconds" placeholder="Seconds">
+            <button id="setCustomTime">Set Time</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

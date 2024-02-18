@@ -1,0 +1,108 @@
+/* Sports World Font */
+@font-face {
+    font-family: 'Sports World';
+    src: url('fonts/Sports World-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Consolas';
+    src: url('fonts/consola.ttf') format('truetype');
+}
+
+/* Center the timer display panel */
+#timerDisplayPanel {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; /* Horizontally align the elements inside the panel */
+}
+
+/* Image styles */
+#timerDisplayPanel img {
+    width: 75%; /* Make the image follow the width of the div */
+}
+
+/* Center the timer display */
+#timerDisplay {
+    font-size: 10em;
+    font-weight: bold;
+    font-family: 'Consolas';
+    margin: 30px 0px 60px;
+}
+
+#houseNameDisplay {
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Sports World';
+    letter-spacing: 2px;
+}
+
+/* Color themes */
+.yellow-black {
+    color: #FFE227;
+    background-color: #121013;
+}
+
+.white-red {
+    color: #E4DEBE;
+    background-color: #A94438;
+}
+
+.white-blue {
+    color: #E9F6FF;
+    background-color: #0B60B0;
+}
+
+.yellow-green {
+    color: #FFF67E;
+    background-color: #416D19;
+}
+
+/* Add a CSS class for pulsing red */
+@keyframes pulse {
+    0%, 100% { background-color: inherit; color: inherit; }
+    50% { background-color: white; color: red; }
+}
+
+.pulse-red {
+    animation: pulse 1s infinite; /* Pulse animation with a duration of 1 second */
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    color: black;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
