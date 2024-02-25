@@ -58,6 +58,7 @@ function toggleTimer() {
     }
     else {
         correctSound.play();
+        console.log(`${new Date().toLocaleTimeString()} - ${houses[currentThemeIndex]} ANSWERED at ${display.textContent}`)
     }
 }
 
@@ -74,6 +75,7 @@ function updateTime() {
             isRunning = false; // Stop the timer
             pulseRed(3000);
             gameOverSound.play();
+            console.log(`${new Date().toLocaleTimeString()} - ${houses[currentThemeIndex]} UNABLE TO ANSWER`)
         }
     }
 
